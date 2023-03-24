@@ -9,15 +9,17 @@ However, some older resources still rely on the old `esx:getSharedObject` event 
 1. Download the latest release of this repository.
 2. Extract the content of the archive and do the following steps...
 
-## Client-side
+### Client-side
 1. Copy the `common.lua` from the `client` folder.
 2. Go to your `es_extended/client`.
 3. Replace the file with my file. 
 
-## Server-side
+### Server-side
 1. Copy the `common.lua` from the `server` folder.
 2. Go to your `es_extended/server`.
 3. Replace the file with my file. 
+
+### Usage
 
 After installing the fix, restart your server, and you can use the `esx:getSharedObject` event as you would normally in older resources. For example, you can use the following code to get the ESX shared object in a client script:
 
@@ -30,7 +32,6 @@ Citizen.CreateThread(function()
     while ESX == nil do
         Citizen.Wait(0)
     end
-
     -- Do something with the ESX shared object
 end)
 ```
