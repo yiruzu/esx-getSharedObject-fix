@@ -9,12 +9,10 @@ However, some older resources still rely on the old `esx:getSharedObject` event 
 1. Download the latest release of this repository.
 2. Extract the content of the archive and do the following steps...
 
-### Client
 3. Copy the `common.lua` from the `client` folder.
 4. Go to your `es_extended/client` folder.
 5. Replace the existing file with my file. 
 
-### Server
 6. Copy the `common.lua` from the `server` folder.
 7. Go to your `es_extended/server`.
 8. Replace the existing file with my file. 
