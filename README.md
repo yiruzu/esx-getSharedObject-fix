@@ -17,6 +17,21 @@ However, some older resources still rely on the old `esx:getSharedObject` event 
 7. Go to your `es_extended/server`.
 8. Replace the existing file with my file. 
 
+## Alternative Installation
+
+In case you prefer a simpler alternative installation method, you can follow these steps:
+
+Open both the common.lua files located in the client and server folders.
+Replace the content at the top of both files with the following code:
+
+```lua
+AddEventHandler("esx:getSharedObject", function(cb)
+    cb(ESX) 
+end)
+```
+
+This alternative method allows you to quickly integrate the necessary code without performing file replacements. It provides a convenient option for those who prefer a more streamlined installation process.
+
 ### Usage
 
 After installing the fix, restart your server, and you can use the `esx:getSharedObject` event as you would normally in older resources. For example, you can use the following code to get the ESX shared object in a client script:
