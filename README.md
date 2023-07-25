@@ -6,21 +6,6 @@ However, some older resources still rely on the old `esx:getSharedObject` event 
 
 ## Installation
 
-1. Download the latest release of this repository.
-2. Extract the content of the archive and do the following steps...
-
-3. Copy the `common.lua` from the `client` folder.
-4. Go to your `es_extended/client` folder.
-5. Replace the existing file with my file. 
-
-6. Copy the `common.lua` from the `server` folder.
-7. Go to your `es_extended/server`.
-8. Replace the existing file with my file. 
-
-## Alternative Installation
-
-In case you prefer a simpler alternative installation method, you can follow these steps:
-
 Open both the common.lua files located in the client and server folders.
 Replace the content at the top of both files with the following code:
 
@@ -30,7 +15,7 @@ AddEventHandler("esx:getSharedObject", function(cb)
 end)
 ```
 
-This alternative method allows you to quickly integrate the necessary code without performing file replacements. It provides a convenient option for those who prefer a more streamlined installation process.
+This method allows you to quickly integrate the necessary code without performing file replacements.
 
 ### Usage
 
