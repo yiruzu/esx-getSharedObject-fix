@@ -7,15 +7,13 @@ However, some older resources still rely on the old `esx:getSharedObject` event 
 ## Installation
 
 Open both the common.lua files located in the client and server folders.
-Replace the content at the top of both files with the following code:
+Replace both the Event Handlers at the top of both files with the following code:
 
 ```lua
 AddEventHandler("esx:getSharedObject", function(cb)
     cb(ESX) 
 end)
 ```
-
-This method allows you to quickly integrate the necessary code without performing file replacements.
 
 ### Usage
 
